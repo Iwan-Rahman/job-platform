@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  background-color:aliceblue;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  background-color: lightskyblue;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+li {
+  background-color: lightskyblue;
+  border-radius: 50%;
+}
+
+a {
+  font-size: 1.2rem;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  text-decoration:none;
+  color: black;
+  font-weight: 800;
+}
+
+#root > div > div{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+
+.user, .company,.job,.app {
+  display: flex;
+}
+
+.user > div {
+  width: calc(100%/8);
+}
+
+.company > div {
+  width: 20%;
+}
+
+.job > div {
+  width: calc(100%/12);
+}
+
+.app > div {
+  width: calc(100%/7);
+}
+
+.btnHome{
+  position: absolute;
+  left: 0;
+}
